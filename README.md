@@ -15,7 +15,7 @@
 * Update your template to use the snippet when referencing files like this:
 ```
 <link href="[[checksumFile? &file=`/assets/template/dist/styles.css`]]" rel="stylesheet">
-<script src="[[checksumFile? &file=`/assets/templatedist/scripts.js`]]"></script>
+<script src="[[checksumFile? &file=`/assets/template/dist/scripts.js`]]"></script>
 ```
 
 
