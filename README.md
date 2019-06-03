@@ -17,6 +17,12 @@
 <link href="[[checksumFile? &file=`/assets/template/dist/styles.css`]]" rel="stylesheet">
 <script src="[[checksumFile? &file=`/assets/template/dist/scripts.js`]]"></script>
 ```
+* Update your `.htaccess` with a redirect rule, to make requests with a checksum work. This one works for SVG, JS, CSS – if you need other file endings you need to add those to the `RewriteRule`:
+```
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.([a-z0-9]+)?\.(svg|js|css)$ $1.$3
+```
 
 
 ## Bug reports
