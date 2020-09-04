@@ -21,7 +21,7 @@
 ```
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)\.([a-z0-9]{8})?\.(svg|js|css)$ $1.$3
+RewriteRule ^(.+)\.([a-z0-9]{8})?\.(svg|js|css)$ $1.$3 [L]
 ```
 
 
